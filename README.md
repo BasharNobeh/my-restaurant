@@ -1,5 +1,5 @@
 # **SeaSalt**
->>>>># _Served Fresh and Tasty_
+# _Served Fresh and Tasty_
 
 <br>
 
