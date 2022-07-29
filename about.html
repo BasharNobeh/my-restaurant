@@ -5,35 +5,124 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="SeaSaltLogo.png" >
+    <link rel="stylesheet" href="MyBackGround.css">
+    <link rel="stylesheet" type="text/css" href="BackGroundTexts.css" />
+    <link rel="stylesheet" href="IndexDes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
 </head>
 <body>
+   
+   
+
+
+
+
+
+
+    <div class=""box>
+        
+        <h1 style="font-size: 100px;text-align:center;
+        text-justify: inter-word;top: 20%;  ">ABOUT<br>  US</h1> 
+         
+    </div>
+    <style>
+        body{
+            width:100%;
+            overflow-x:hidden;
+            overflow-y:scroll;
+        }
+    </style>
+    <div class="loader"></div>
+    <script>
+        window.addEventListener("load", () => {
+    const loader = document.querySelector(".loader").classList.add("loader--hidden");
+  
+    loader.classList.add("loader--hidden");
+  
+    loader.addEventListener("transitionend", () => {
+      document.body.removeChild(loader);
+    });
+  });
+    </script>
+    
     <header>
-        <h1>SeaSalt - About Us</h1>
-        <style>
-            #content2 {
-                position: relative;
-            }
-            #content2 img {
-                position: absolute;
-                top: -80px;
-                right: 1220px;
-            }
-        </style>
+
+        
+        <div class="container">
+            <h1 class="logo"></h1>
+      
+            <nav>
+              <ul>
+                
+                <li style = "font-family: Times New Roman, Times, serif;"><a href="index.html">MENU</a></li>
+                <li style = "font-family: Times New Roman, Times, serif;"><a href="Support.html">Support</a></li>
+                <li style = "font-family: Times New Roman, Times, serif;"><a href="OnlineOrders.html">Delivery</a></li>
+              </ul>
+            </nav>
+          </div>
+        
+      
+     
         
         <div id="content2">
-            <img src="logo2.png" width="100" height="100" alt="Logo">
-            <li style="font-size: 20px"><a href="index.html"> <strong>Main Page</strong> </a></li>
-        <li style="font-size: 20px"><a href="Support.html"><strong> Support</strong> </a></li>
+            <img  src="logo2.png" width="100" height="100" alt="Logo">
+            
         </div>
+       
+         
+        
+       
+   
+
     </header>
-    <main>
-        <p style="font-size: 22px"> <strong> Owner : Bashar Nobeh</strong>
-            <p style="font-size: 22px"> <strong>Business Mobile Number : 0795468509</strong>
-                <p style="font-size: 22px"> <strong> Email : Basharnobeh2001@gmail.com</strong>
-                    <p style="font-size: 22px"> <strong> Regards . </strong>
-    </main>
-    <footer>
-        <p>&copy; 2022 SeaSalt.com</p>
+   
+    <footer> 
+        
+          <div class="background"></div>
+<div id="curve" class="cardd">
+    <div class="footer">
+        <div class="connections">
+            
+            <div href="www.google.com" class="connection facebook"><div class="icon" ></div></div>
+            <div class="connection twitter"><div class="icon"></div></div>
+            <div class="connection behance"><div class="icon"></div></div>
+        </div>
+        <svg id="curve">
+            <path id="p" d="M0,200 Q80,100 400,200 V150 H0 V50" transform="translate(0 300)" />
+            <rect id="dummyRect" x="0" y="0" height="450" width="400"
+		  fill="transparent" />
+            <!-- slide up-->
+            <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,100 400,50 V150 H0 V50" fill="freeze" begin="dummyRect.mouseover" end="dummyRect.mouseout" dur="0.1s" id="bounce1" />
+            <!-- slide up and curve in -->
+            <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,0 400,50 V150 H0 V50" fill="freeze" begin="bounce1.end" end="dummyRect.mouseout" dur="0.15s" id="bounce2" />
+            <!-- slide down and curve in -->
+            <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,80 400,50 V150 H0 V50" fill="freeze" begin="bounce2.end" end="dummyRect.mouseout" dur="0.15s" id="bounce3" />
+            <!-- slide down and curve out -->
+            <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,45 400,50 V150 H0 V50" fill="freeze" begin="bounce3.end" end="dummyRect.mouseout" dur="0.1s" id="bounce4" />
+            <!-- curve in -->
+            <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,50 400,50 V150 H0 V50" fill="freeze" begin="bounce4.end" end="dummyRect.mouseout" dur="0.05s" id="bounce5" />
+
+            <animate xlink:href="#p" attributeName="d" to="M0,200 Q80,100 400,200 V150 H0 V50" fill="freeze" begin="dummyRect.mouseout" dur="0.15s" id="bounceOut" />
+        </svg>
+        <div class="info">
+            <div class="name">Bashar Nobeh</div>
+            <div class="job">Software engineer<br>Basharnobeh2001@gmail.com </div>
+        </div>
+    </div>
+    <div class="card-blur"></div>
+</div>
+<p style="font-size: 14px;bottom: 0;left: 0%; position: fixed;" class="bottomSpans">&copy; 2022 SeaSalt.com</p>
+<a href="https://www.facebook.com/bashar.mohammad.31924/" class="fa fa-facebook"></a>
+<a href="Snap.jpeg" class="fa fa-snapchat-ghost"></a>
+<a href="https://www.instagram.com/imbasharr/?igshid=YmMyMTA2M2Y%3D&fbclid=IwAR3_vejHGDBI9OLszuD0dN4pBBhjyPhGJYQkfVdnCt_YGbDnGI-CXc4s1uY" class="fa fa-instagram"></a>
+<a href="https://www.linkedin.com/in/bashar-nobeh-6a4a5419a/" class="fa fa-linkedin"></a>
+
+    </footer>
+   
+    
 
     
 </body>

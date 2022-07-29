@@ -5,40 +5,123 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="SeaSaltLogo.png" >
+    <link rel="stylesheet" href="MyBackGround.css">
+    <link rel="stylesheet" type="text/css" href="BackGroundTexts.css" />
+    <link rel="stylesheet" href="IndexDes.css">
+    <link rel="stylesheet" type="text/css" href="SupportDesigns.css" />
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+     
 </head>
 <body>
+
+
+
+
+    
+
+
+
+  
+    <style>
+        body{
+            width:100%;
+            overflow-x:hidden;
+            overflow-y:scroll;
+        }
+    </style>
+    <div class="loader"></div>
+    <script>
+        window.addEventListener("load", () => {
+    const loader = document.querySelector(".loader").classList.add("loader--hidden");
+  
+    loader.classList.add("loader--hidden");
+  
+    loader.addEventListener("transitionend", () => {
+      document.body.removeChild(loader);
+    });
+  });
+    </script>
+    
+    
     <header>
-        <h1>SeaSalt - Support</h1>
-        <style>
-            #content2 {
-                position: relative;
-            }
-            #content2 img {
-                position: absolute;
-                top: -80px;
-                right: 1240px;
-            }
-        </style>
+        <h1>S<br>U<br>P<br>P<br>O<br>R<br>T</h1>
+      
         
-        <div id="content2">
-            <img src="logo2.png" width="100" height="100" alt="Logo">
-            <li style="font-size: 20px"><a href="index.html"> <strong>Main Page</strong> </a></li>
-        <li style="font-size: 20px"><a href="about.html"><strong> About us</strong> </a></li>
-        </div>
+       
     </header>
-    <main>
-        <p style="font-size: 26px"> <strong>Please Enter your email and fill the subject down below .<br> We will contact you as fast as possible.</strong>
+    <header>
+
         
-                    <form action="/action_page.php">
-                        <p style="font-size: 26px"> <strong>Your Email Address :</strong>
-                        <input type="text" id="fname" name="fname" value="Enter your email here"><br>
-                        <p style="font-size: 26px"> <strong>Subject :</strong>
-                        <input type="text" id="lname" name="lname" value="Enter Your subject here"><br><br>
-                        <input type="submit" value="Submit">
-                      </form> 
-    </main>
+        <div class="container">
+            <h1 class="logo"></h1>
+      
+            <nav>
+              <ul>
+                
+                <li style = "font-family: Times New Roman, Times, serif;"><a href="index.html">MENU</a></li>
+                <li style = "font-family: Times New Roman, Times, serif;"><a href="about.html">ABOUT US</a></li>
+                <li style = "font-family: Times New Roman, Times, serif;"><a href="OnlineOrders.html">Delivery</a></li>
+              </ul>
+            </nav>
+          </div>
+        
+      
+     
+          <div id="content2">
+            <img  src="logo2.png" width="100" height="100" alt="Logo">
+            
+        </div>
+       
+       
+        <div class="box">
+            <span>F I L L</span>
+            <span>T H E</span>
+            <span>F O R M</span>
+            <span>PLEASE</span>
+            
+            
+           
+          </div>  
+        
+       
+   
+
+    </header>
+    
+<main> 
+    
+    
+    <div class="wrapperr">
+        <form method="post" action="" class="ccform">
+        <div class="ccfield-prepend">
+            <span class="ccform-addon"><i class="fa fa-user fa-2x"></i></span>
+            <input class="ccformfield" type="text" placeholder="Full Name" required>
+        </div>
+        <div class="ccfield-prepend">
+            <span class="ccform-addon"><i class="fa fa-envelope fa-2x"></i></span>
+            <input class="ccformfield" type="text" placeholder="Email" required>
+        </div>
+        <div class="ccfield-prepend">
+            <span class="ccform-addon"><i class="fa fa-mobile-phone fa-2x"></i></span>
+            <input class="ccformfield" type="text" placeholder="Phone">
+        </div>
+         <div class="ccfield-prepend">
+            <span class="ccform-addon"><i class="fa fa-info fa-2x"></i></span>
+            <input class="ccformfield" type="text" placeholder="Subject" required>
+        </div>
+        <div class="ccfield-prepend">
+            <span class="ccform-addon"><i class="fa fa-comment fa-2x"></i></span>
+            <textarea class="ccformfield" name="comments" rows="8" placeholder="Message" required></textarea>
+        </div>
+        <div class="ccfield-prepend">
+            <input class="ccbtn" type="submit" value="Submit">
+        </div>
+        </form>
+    </div>
+</main>
     <footer>
-        <p>&copy; 2022 SeaSalt.com</p>
+        <p style="font-size: 14px;bottom: 0;left: 0%; position: fixed;" class="bottomSpans">&copy; 2022 SeaSalt.com</p>
 
     </footer>
     

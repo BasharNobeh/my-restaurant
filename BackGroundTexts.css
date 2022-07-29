@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:900');
+
+h1 {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30vh;
+  letter-spacing: 1vw;
+  position: absolute;
+  top: 15vh;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  background: url('https://images7.alphacoders.com/370/370162.jpg');
+  background-size: auto 110%;
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color:transparent;
+  animation: shine 15s infinite;
+}
+h1:nth-child(2) {
+  top: 50vh;
+}
+@keyframes shine {
+  from {
+    background-position: center 0;
+  }
+  to {
+    background-position: center 200%;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.imgs {
+  width: 30%;
+  height: 100%;
+  object-fit: cover;
+
+  -webkit-box-reflect: below 2px
+    linear-gradient(transparent, transparent, #0004);
+
+  transform-origin: center;
+  transform: perspective(800px) rotateY(25deg);
+  transition: 0.5s;
+}
+
+
+
+
+.cardd {
+    position: absolute;
+    border-radius: 8px;
+    height: 450px;
+    width: 400px;
+    top: 80%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+   background-image: url(MyPic.jpg);
+    background-size:auto;
+    background-position:center;
+    transform:scale();
+    background-repeat: no-repeat;
+    box-shadow: 0 0 px -10px rgb(0, 0, 0);
+    overflow: hidden;
+}
+
+.cardd-blur {
+    position: absolute;
+    height: 100%;
+    width: calc(100% + 1px);
+    background-color: rgb(166, 167, 168);
+    opacity: 0;
+    transition: opacity 0.15s ease-in;
+}
+
+.cardd:hover .card-blur {
+    opacity: 0.6;
+}
+
+.footer {
+    z-index: 1;
+    position: absolute;
+    height: 80px;
+    width: 100%;
+    bottom: 0;
+}
+
+svg#curve {
+    position: absolute;
+    fill: rgb(255, 255, 255);
+    left: 0;
+    bottom: 0;
+    width: 400px;
+    height: 450px;
+}
+
+.connections {
+    height: 80px;
+    width: 400px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 100px;
+    margin: auto;
+}
+
+.connection {
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+    background-color: white;
+    display: inline-block;
+    padding: 5px;
+    margin-right: 25px;
+    transform: translateY(200px);
+    
+    transition: transform 1s cubic-bezier(.46, 1.48, .18, .81);
+}
+
+.cardd:hover .connection {
+    transform: translateY(0px);
+}
+
+.info {
+    
+	font-family: Inconsolata;
+    padding-left: 20px;
+    transform: translateY(250px);
+    
+    transition: transform 1s cubic-bezier(.31,1.21,.64,1.02);
+}
+
+.cardd:hover .info {
+    transform: translateY(0px);
+}
+
+.name {
+    font-weight: bolder;
+    padding-top: 5px;
+}
+
+.job {
+    margin-top: 10px;
+}
+
+.connection.facebook {
+    height: 35px;
+    width: 35px;
+    margin-left: 20px;
+    padding: 0px;
+    border-radius: 100%;
+    overflow:auto;
+    
+}
+.connection.twitter {
+    height: 35px;
+    width: 35px;
+    margin-left: 20px;
+    padding: 0px;
+    border-radius: 100%;
+    overflow:auto;
+    
+}
+.connection.behance {
+    height: 35px;
+    width: 35px;
+    margin-left: 20px;
+    padding: 0px;
+    border-radius: 100%;
+    overflow:auto;
+    
+}
+
+.connection.twitter {
+    transition-delay: 0.06s;
+}
+
+.connection.behance {
+    transition-delay: 0.12s;
+}
+
+.connection.facebook .icon {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    
+    
+}
+
+.connection.twitter .icon {
+    height: 100%;
+    width: 100%;
+    
+    background-position: center;
+    background-size: cover;
+}
+
+.connection.behance .icon {
+    height: 100%;
+    width: 110;
+    
+    background-position: center;
+    background-size: cover;
+    
+    
+}
+
+.connection.facebook .icon {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png)
+}
+.connection.behance .icon {
+    background-image: url(https://img.favpng.com/19/24/9/github-computer-icons-png-favpng-EH48TJQeWNNh90Lcfa1PvssfC_t.jpg)
+    
+    
+}
+.connection.twitter .icon {
+    background-image: url(https://img.freepik.com/premium-vector/modern-badge-discord-icon_578229-169.jpg?w=360)
+    
+    
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  .fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+    background: #fffc00;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+
+
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+  
+}
+.fa-instagram {
+    background: #b51a98;
+    color: white;
+  }
+
